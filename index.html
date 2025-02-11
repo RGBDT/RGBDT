@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="container">
+        <div class="card">
+            <h1 class="page-title">Добро пожаловать!</h1>
+            <img src="images/main.jpg" alt="Главное изображение" class="centered-image">
+            <p>Приветствую вас на моём сайте. Здесь вы найдёте информацию обо мне и моих услугах.</p>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // Load navigation
+        fetch('components/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+                setActiveLink();
+            });
+
+        // Load footer
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+        // Set active link
+        function setActiveLink() {
+            const currentPage = location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
