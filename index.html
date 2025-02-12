@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная - GateHub</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Хедер -->
-  <header class="header">
-    <div class="container">
-      <h1>GateHub</h1>
-      <!-- Кнопка меню справа -->
-      <button class="menu-toggle" aria-label="Открыть меню">&#9776;</button>
+
+    <!-- Меню -->
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="content">
+        <section id="home">
+            <h1>Добро пожаловать!</h1>
+            <p>Это главная страница моего сайта.</p>
+        </section>
+
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <p>Здесь вы можете узнать о наших услугах.</p>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами по телефону или электронной почте.</p>
+        </section>
     </div>
-  </header>
 
-  <!-- Боковое меню -->
-  <nav class="sidebar">
-    <ul class="menu">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="about.html">Описание</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-  </nav>
-
-  <!-- Основной контент -->
-  <main class="container">
-    <section class="hero">
-      <h2>Добро пожаловать на GateHub!</h2>
-      <p>Мы создаем инновационные решения для вашего бизнеса.</p>
-    </section>
-  </main>
-
-  <!-- Футер -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2023 GateHub. Все права защищены.</p>
-    </div>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
