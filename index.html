@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная - GateHub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Мой сайт</div>
-            <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">Описание</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container">
+      <h1>GateHub</h1>
+      <button id="menuToggle" class="menu-toggle">&#9776;</button>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero">
-            <h1>Добро пожаловать на мой сайт!</h1>
-            <p>Здесь вы найдете полезную информацию.</p>
-        </section>
-    </main>
+  <!-- Боковое меню -->
+  <nav class="sidebar" id="sidebar">
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">Описание</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Мой сайт. Все права защищены.</p>
-    </footer>
+  <!-- Основной контент -->
+  <main class="container">
+    <section class="hero">
+      <h2>Добро пожаловать на GateHub!</h2>
+      <p>Мы создаем инновационные решения для вашего бизнеса.</p>
+      <button id="ctaButton">Узнать больше</button>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 GateHub. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

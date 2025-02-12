@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты - GateHub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Мой сайт</div>
-            <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">Описание</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container">
+      <h1>GateHub</h1>
+      <button id="menuToggle" class="menu-toggle">&#9776;</button>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="contact-section">
-            <h2>Свяжитесь со мной</h2>
-            <p>Email: example@example.com</p>
-            <p>Телефон: +123 456 789</p>
-        </section>
-    </main>
+  <!-- Боковое меню -->
+  <nav class="sidebar" id="sidebar">
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">Описание</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Мой сайт. Все права защищены.</p>
-    </footer>
+  <!-- Основной контент -->
+  <main class="container">
+    <section class="contacts">
+      <h2>Наши контакты</h2>
+      <p>Email: info@gatehub.com</p>
+      <p>Телефон: +7 (123) 456-78-90</p>
+      <p>Адрес: Москва, ул. Технологическая, 15</p>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 GateHub. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
