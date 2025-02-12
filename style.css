@@ -33,11 +33,6 @@ body {
   cursor: pointer;
 }
 
-/* Скрываем чекбокс */
-.menu-checkbox {
-  display: none;
-}
-
 /* Боковое меню */
 .sidebar {
   position: fixed;
@@ -51,8 +46,9 @@ body {
   z-index: 1000;
 }
 
-/* Показываем меню, если чекбокс отмечен */
-.menu-checkbox:checked ~ .sidebar {
+/* Показываем меню при фокусе на кнопке */
+.menu-toggle:focus + .sidebar,
+.sidebar:focus-within {
   right: 0; /* Показываем меню */
 }
 
